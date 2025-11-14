@@ -1,0 +1,59 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 3000,
+    "version": "1.21.1",
+    "auth": "offline"
+  },
+  "bot": {
+    "baseUsername": "AFKBot",
+    "password": ""
+  },
+  "features": {
+    "autoReconnect": {
+      "enabled": true,
+      "delay": 1,
+      "maxDelay": 10
+    },
+    "randomUsernameOnKick": {
+      "enabled": true,
+      "length": 4
+    },
+    "antiAfk": {
+      "enabled": true,
+      "minInterval": 5000,
+      "maxInterval": 15000,
+      "actions": {
+        "jump": true,
+        "sneak": true,
+        "lookAround": true,
+        "swingArm": true,
+        "walkRandomly": false,
+        "sprintForward": false,
+        "toggleWalk": false,
+        "mineBlockRandomly": false,
+        "placeBlockRandomly": false,
+        "useItem": false,
+        "switchHotbar": true,
+        "dropItem": false,
+        "interactWithEntity": false,
+        "openContainer": false
+    }
+    },
+    "autoChat": {
+      "enabled": true,
+      "interval": 60000,
+      "messages": [
+        "Hello! I'm an automated bot.",
+        "This is an AFK bot.",
+        "I'm currently AFK. Please leave a message."
+      ]
+    }
+  },
+  "position": {
+    "enabled": false,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}
